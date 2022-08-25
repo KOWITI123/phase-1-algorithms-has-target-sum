@@ -1,6 +1,15 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  const value= {};
+  for (const num of array){
+    const result = target - num;
+    if (result in value) {
+       return true;
+    }value[num] = true
 }
+  return false;
+}
+
 
 /* 
   Write the Big O time complexity of your function here
